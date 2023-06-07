@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function NavigasiBar() {
   return (
-    <nav className="mt-3 fixed top-0 left-0 bottom-0 right-0">
+    <nav className="mt-3 fixed left-0 right-0 top-0">
       <div className="max-w-screen-xl flex flex-wrap items-center rounded-lg bg-white justify-between mx-auto p-4">
         <a href="https://github.com/irvanshandika" className="flex items-center">
           <Image src={Logo} className="w-9 mr-1" alt="" />
@@ -23,7 +23,7 @@ export default function NavigasiBar() {
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-        <ul className="flex flex-col mt-4 md:mt-0 md:flex-row md:space-x-8">
+          <ul className="flex flex-col mt-4 md:mt-0 md:flex-row md:space-x-8">
             <li>
               <a
                 href="#"
@@ -40,9 +40,9 @@ export default function NavigasiBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#sertifikat"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
-                Certificate
+                Sertifikat
               </a>
             </li>
             <li>
@@ -54,7 +54,7 @@ export default function NavigasiBar() {
             </li>
             <li>
               <a
-                href="#"
+                href="#kontak"
                 className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">
                 Contact
               </a>

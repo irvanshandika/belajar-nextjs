@@ -8,13 +8,13 @@ export default function Carousel() {
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto1} className="dark:block w-full h-auto" alt="..." />
+          <Image src={Foto1} className="dark:block w-full h-auto" alt="Projek 1" />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto2} className="dark:block w-full h-auto" alt="..." />
+          <Image src={Foto2} className="dark:block w-full h-auto" alt="Projek 2" />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto3} className="dark:block w-full h-auto" alt="..." />
+          <Image src={Foto3} className="dark:block w-full h-auto" alt="Projek 3" />
         </div>
       </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">

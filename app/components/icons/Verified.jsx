@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Verified() {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className="-bottom-9" width="20" height="25" viewBox="0 0 48 48">
+    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" className="-bottom-9" width="20" height="33" viewBox="0 0 48 48">
       <polygon
         fill="#42a5f5"
         points="29.62,3 33.053,8.308 39.367,8.624 39.686,14.937 44.997,18.367 42.116,23.995 45,29.62 39.692,33.053 39.376,39.367 33.063,39.686 29.633,44.997 24.005,42.116 18.38,45 14.947,39.692 8.633,39.376 8.314,33.063 3.003,29.633 5.884,24.005 3,18.38 8.308,14.947 8.624,8.633 14.937,8.314 18.367,3.003 23.995,5.884"></polygon>
