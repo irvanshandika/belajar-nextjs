@@ -13,8 +13,12 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
+        <meta property="og:title" content="Muhammad Irvan Shandika | My Portfolio" />
+        <meta property="og:site_name" content="irvanshandika.my.id" />
+        <meta property="og:description" content="Portfolio dengan menggunakan tailwindcss dan nextjs" />
+        <meta property="og:type" content="website" />
       </head>
-      <body className={inter.className}>
+      <body className={inter.className} style={{ backgroundColor: "black" }}>
         {children}
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
       </body>

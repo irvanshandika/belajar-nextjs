@@ -5,6 +5,7 @@ import AboutMe from "./components/about";
 import Myproject from "./components/project";
 import Certificate from "./components/certificat";
 import Kontact from "./components/kontak";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Certificate />
       <Myproject />
       <Kontact />
+      <Footer />
     </>
   );
 }
