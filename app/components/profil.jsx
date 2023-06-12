@@ -1,5 +1,4 @@
 import Foto from "../foto.jpg";
-import React from "react";
 import Image from "next/image";
 import Github from "./icons/Github";
 import Facebook from "./icons/Facebook";
