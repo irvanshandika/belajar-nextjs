@@ -8,7 +8,7 @@ export default function NavigasiBar() {
     <nav className="mt-3 fixed left-0 right-0 top-0">
       <div className="max-w-screen-xl flex flex-wrap items-center rounded-lg bg-white justify-between mx-auto p-4">
         <a href="https://github.com/irvanshandika" className="flex items-center">
-          <Image src={Logo} className="w-9 mr-1" alt="" />
+          <Image src={Logo} className="w-9 mr-1" alt="Logo" />
           <p className="font-semibold uppercase lg:text-xl sm:text-xs text-black">Muhammad Irvan Shandika</p>
         </a>
         <button
@@ -19,7 +19,7 @@ export default function NavigasiBar() {
           aria-expanded="false">
           <span className="sr-only">Open main menu</span>
           <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+            <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path>
           </svg>
         </button>
         <div className="hidden w-full md:block md:w-auto" id="navbar-default">

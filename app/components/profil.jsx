@@ -19,7 +19,7 @@ export default function Profil() {
           </div>
           <div className="flex items-center">
             <span className="text-base text-gray-500 dark:text-gray-400">Frontend Developer</span>
-            <svg className="ml-2 w-4 h-4 icon icon-tabler icon-tabler-code" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="ml-2 w-4 h-4 icon icon-tabler icon-tabler-code" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none" stroke="none" />
               <polyline points="7 8 3 12 7 16" />
               <polyline points="17 8 21 12 17 16" />

@@ -1,20 +1,20 @@
 import Image from "next/image";
-import Foto1 from "./foto1.png";
-import Foto2 from "./foto2.png";
-import Foto3 from "./foto3.png";
+import Projek1 from "./foto1.png";
+import Projek2 from "./foto2.png";
+import Projek3 from "./foto3.png";
 
 export default function Carousel() {
   return (
     <div id="default-carousel" className="relative w-full" data-carousel="slide">
       <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto1} className="dark:block w-full h-auto" alt="Projek 1" />
+          <Image src={Projek1} className="dark:block w-full h-auto" alt="Projek 1" />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto2} className="dark:block w-full h-auto" alt="Projek 2" />
+          <Image src={Projek2} className="dark:block w-full h-auto" alt="Projek 2" />
         </div>
         <div className="hidden duration-700 ease-in-out" data-carousel-item>
-          <Image src={Foto3} className="dark:block w-full h-auto" alt="Projek 3" />
+          <Image src={Projek3} className="dark:block w-full h-auto" alt="Projek 3" />
         </div>
       </div>
       <div className="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
@@ -28,7 +28,7 @@ export default function Carousel() {
       <button type="button" className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
           </svg>
           <span className="sr-only">Previous</span>
         </span>
@@ -36,7 +36,7 @@ export default function Carousel() {
       <button type="button" className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
         <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
           <svg aria-hidden="true" className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
           </svg>
           <span className="sr-only">Next</span>
         </span>

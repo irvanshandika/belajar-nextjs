@@ -4,12 +4,12 @@ export default function Instagram() {
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 102 102" id="instagram">
         <defs>
           <radialGradient id="a" cx="6.601" cy="99.766" r="129.502" gradientUnits="userSpaceOnUse">
-            <stop offset=".09" stop-color="#fa8f21"></stop>
-            <stop offset=".78" stop-color="#d82d7e"></stop>
+            <stop offset=".09" stopColor="#fa8f21"></stop>
+            <stop offset=".78" stopColor="#d82d7e"></stop>
           </radialGradient>
           <radialGradient id="b" cx="70.652" cy="96.49" r="113.963" gradientUnits="userSpaceOnUse">
-            <stop offset=".64" stop-color="#8c3aaa" stop-opacity="0"></stop>
-            <stop offset="1" stop-color="#8c3aaa"></stop>
+            <stop offset=".64" stopColor="#8c3aaa" stopOpacity="0"></stop>
+            <stop offset="1" stopColor="#8c3aaa"></stop>
           </radialGradient>
         </defs>
         <path
