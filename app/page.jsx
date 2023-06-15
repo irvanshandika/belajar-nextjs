@@ -1,9 +1,9 @@
 import NavigasiBar from "./components/navbar";
 import Profil from "./components/profil";
 import AboutMe from "./components/about";
-import Myproject from "./components/project";
+import Myproject from "./components/Projek";
 import Certificate from "./components/certificat";
-import Kontact from "./components/kontak";
+import Contact from "./components/kontak";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -14,7 +14,7 @@ export default function Home() {
       <AboutMe />
       <Certificate />
       <Myproject />
-      <Kontact />
+      <Contact />
       <Footer />
     </>
   );

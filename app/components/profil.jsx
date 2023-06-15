@@ -1,5 +1,5 @@
-import Foto from "../foto.jpg";
 import Image from "next/image";
+import Foto from "../foto.jpg";
 import Github from "./icons/Github";
 import Facebook from "./icons/Facebook";
 import Instagram from "./icons/Instagram";
@@ -17,7 +17,9 @@ export default function Profil() {
             <Verified />
           </div>
           <div className="flex items-center">
-            <span className="text-base text-gray-500 dark:text-gray-400">Frontend Developer</span>
+            <h2 className="text-base text-gray-500 dark:text-gray-400">
+              Frontend Developer & <span className="text-base text-gray-500">Mahasiswa</span>
+            </h2>
             <svg className="ml-2 w-4 h-4 icon icon-tabler icon-tabler-code" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 0h24v24H0z" fill="none" stroke="none" />
               <polyline points="7 8 3 12 7 16" />
