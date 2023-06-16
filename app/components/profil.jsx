@@ -10,7 +10,7 @@ export default function Profil() {
   return (
     <>
       <div className="w-full mx-auto mb-4 mt-24 max-w-7xl bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex flex-col items-center pb-10">
+        <div className="flex flex-col items-center pb-10 font-outfit font-bold">
           <Image className="w-32 h-32 mb-3 mt-8 rounded-full shadow-lg" src={Foto} alt="Muhammad Irvan Shandika" />
           <div className="flex">
             <h5 className="mb-1 text-2xl font-medium text-gray-900 dark:text-white">Muhammad Irvan Shandika</h5>

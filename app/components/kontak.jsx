@@ -29,13 +29,13 @@ export default function Contact() {
   };
   return (
     <section id="kontak">
-      <div className="block max-w-7xl py-28 mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <div className="block max-w-7xl py-28 mx-auto mt-4 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 font-outfit">
         <div className="flex flex-col items-center pb-10">
           <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
-              Contact <span className="text-blue-500">Me</span>
+              Hubungi <span className="text-blue-500">Saya</span>
             </h2>
-            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Jika ada yang ingin ditanyakan? SIlahkan isi pesan dibawah ini :)</p>
+            <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ex!</p>
             <form onSubmit={handleSubmit} ref={formRef} name="messege-to-form" className="form space-y-8">
               <div>
                 <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
