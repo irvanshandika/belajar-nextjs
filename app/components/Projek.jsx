@@ -12,7 +12,7 @@ export default function Projek() {
         <h5 className="text-center text-2xl font-bold my-8">Projek</h5>
         <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
           <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
-            <div id="default-carousel" className="relative w-full" data-carousel="slide">
+            <div id="default-carousel" className="relative w-full z-0" data-carousel="slide">
               <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
                 <div className="hidden duration-700 ease-in-out" data-carousel-item>
                   <Image src={Projek1} className="block w-full h-auto" alt="Projek 1" />
