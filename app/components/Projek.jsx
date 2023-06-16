@@ -7,7 +7,7 @@ import Projek5 from "./foto5.png";
 
 export default function Projek() {
   return (
-    <section id="project">
+    <section id="project" className="z-0">
       <div className="w-full py-28 mx-auto my-4 max-w-7xl bg-white border border-gray-200 rounded-lg shadow ">
         <h5 className="text-center text-2xl font-bold my-8">Projek</h5>
         <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">

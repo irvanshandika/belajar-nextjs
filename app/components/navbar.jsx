@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function NavigasiBar() {
   return (
-    <nav className="mt-3 fixed left-0 right-0 top-0">
+    <nav className="mt-3 fixed left-0 right-0 top-0 z-10">
       <div className="max-w-screen-xl flex flex-wrap items-center rounded-lg bg-white justify-between mx-auto p-4">
         <a href="https://github.com/irvanshandika" className="flex items-center">
           <Image src={Logo} className="w-9 mr-1" alt="Logo" />
