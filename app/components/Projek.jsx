@@ -9,7 +9,8 @@ export default function Projek() {
   return (
     <section id="project" className="z-0">
       <div className="w-full py-28 mx-auto my-4 max-w-7xl bg-white border border-gray-200 rounded-lg shadow ">
-        <h5 className="text-center text-2xl font-bold my-8 font-outfit">Projek Saya</h5>
+        <h5 className="text-center text-2xl font-bold my-8 font-outfit">Projek <span className="text-sky-500">Saya</span></h5>
+        <p className="text-center text-xl font-bold my-8 font-outfit">Berikut Projek Yang Telah Saya Buat</p>
         <div className="relative mx-auto border-gray-800 dark:border-gray-800 bg-gray-800 border-[8px] rounded-t-xl h-[172px] max-w-[301px] md:h-[294px] md:max-w-[512px]">
           <div className="rounded-lg overflow-hidden h-[156px] md:h-[278px] bg-white dark:bg-gray-800">
             <div id="default-carousel" className="relative w-full z-0" data-carousel="slide">
