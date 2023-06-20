@@ -84,7 +84,7 @@ export default function Contact() {
                   type="submit"
                   as={"input"}
                   className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-400 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                  Loading ...
+                  Loading...
                 </button>
               ) : (
                 <button
