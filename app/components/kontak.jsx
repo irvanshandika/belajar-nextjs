@@ -7,6 +7,8 @@ export default function Contact() {
   const scriptURL = "https://script.google.com/macros/s/AKfycbxDhJp2Kya9dSPXVhpkStDYNhWums6uNMrB_ssrOeX1KkNg2B_3S0-7sFejJ9xMjqaj/exec";
 
   const handleSubmit = async (e) => {
+    var alertDiv = document.getElementById("alert");
+    alertDiv.classList.remove("hidden");
     e.preventDefault();
     try {
       setLoading(true);
@@ -17,8 +19,8 @@ export default function Contact() {
       });
       setLoading(false);
       setTimeout(() => {
-        alert("Pesan Terkirim");
-      });
+        alertDiv.classList.add("hidden");
+      }, 3000);
       if (formRef.current) {
         formRef.current.reset();
       }
@@ -36,6 +38,17 @@ export default function Contact() {
               Hubungi <span className="text-blue-500">Saya</span>
             </h2>
             <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, ex!</p>
+            <div className="hidden" id="alert">
+              <div className="flex items-center p-4 mb-4 text-sm text-white rounded-lg bg-green-500" role="alert">
+                <svg className="flex-shrink-0 inline w-4 h-4 mr-3" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z" />
+                </svg>
+                <span className="sr-only">Info</span>
+                <div>
+                  <span className="font-medium">Pesan Anda Terkirim!</span>
+                </div>
+              </div>
+            </div>
             <form onSubmit={handleSubmit} ref={formRef} name="messege-to-form" className="form space-y-8">
               <div>
                 <label for="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">
