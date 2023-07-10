@@ -8,19 +8,21 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     var alertDiv = document.getElementById("alert");
-    alertDiv.classList.remove("hidden");
     e.preventDefault();
     try {
       setLoading(true);
       const formData = new FormData(formRef.current);
+      alertDiv.classList.add("hidden");
       await fetch(scriptURL, {
         method: "POST",
         body: formData,
+      }).then(() => {
+        alertDiv.classList.remove("hidden");
+        setLoading(false);
+        setTimeout(() => {
+          alertDiv.classList.add("hidden");
+        }, 3000);
       });
-      setLoading(false);
-      setTimeout(() => {
-        alertDiv.classList.add("hidden");
-      }, 3000);
       if (formRef.current) {
         formRef.current.reset();
       }
@@ -87,22 +89,12 @@ export default function Contact() {
                   className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
                   placeholder="Leave a comment..."></textarea>
               </div>
-              {/* <button
-          type="submit"
-          className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-400 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-          Send message
-        </button> */}
               {loading ? (
-                // <button
-                //   type="submit"
-                //   as={"input"}
-                //   className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-400 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
-                //   Loading...
-                // </button>
                 <button
                   disabled
                   type="submit"
                   as={"input"}
+                  id="btn-loading"
                   className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 inline-flex items-center">
                   <svg role="status" className="inline w-4 h-4 mr-3 text-white animate-spin" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path
@@ -120,6 +112,7 @@ export default function Contact() {
                 <button
                   as={"input"}
                   type="submit"
+                  id="btn-kirim"
                   className="py-3 px-5 text-sm font-medium text-center text-black rounded-lg bg-blue-400 sm:w-fit hover:bg-blue-500 focus:ring-4 focus:outline-none focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800">
                   Send Message
                 </button>
