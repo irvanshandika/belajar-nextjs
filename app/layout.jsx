@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import { Inter } from "next/font/google";
 
@@ -17,10 +18,11 @@ export default function RootLayout({ children }) {
         <meta property="og:description" content="Portfolio dengan menggunakan tailwindcss dan nextjs" />
         <meta property="og:type" content="website" />
         <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet" />
       </head>
       <body className={inter.className} style={{ backgroundColor: "black" }}>
         {children}
+        <Analytics />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
       </body>
     </html>
